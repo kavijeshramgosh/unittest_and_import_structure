@@ -1,3 +1,7 @@
+'''
+This is how you can import things from Application in the same directory as Application
+'''
+
 from Application import *
 
 First_script.One_Func()
