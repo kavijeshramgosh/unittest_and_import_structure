@@ -1,0 +1,11 @@
+To create environment
+conda env create -f environment.yml
+
+To activate environment
+conda activate unittesting
+
+To check environment has been activated
+conda env list 
+
+To check packages
+conda list
