@@ -1,5 +1,6 @@
 '''
-This is how you can import things from Application in the same directory as Application
+This is how you can import things from Application to a file in the
+same directory as Application
 '''
 
 from Application import *
