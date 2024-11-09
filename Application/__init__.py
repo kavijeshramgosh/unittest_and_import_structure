@@ -1,8 +1,12 @@
-#Turns "Application" into a package for Tests.py
+'''
+Turns "Application" into a package for Tests.py
 
-from .Second import Two
+___init___.py is not designed to be run as a script so cannot be run
+'''
 
-__all__ = ["First","Two"]
+from .Second_script import Two_Func
+
+__all__ = ["First_script","Two_Func"]
 
 #only these 2 are needed since these are the only scripts in this directory
 

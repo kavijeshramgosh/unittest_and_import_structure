@@ -1,17 +1,17 @@
 from Application import *
 
-First.One()
+First_script.One_Func()
 
-Two()
+Two_Func()
 
 from Application.package import *
 
-Third.Three()
+Third_script.Three_Func()
 
-Four()
+Four_Func()
 
 from Application.package.subpackage import *
 
-Fifth.Five()
+Fifth_script.Five_Func()
 
-Six()
+Six_Func()

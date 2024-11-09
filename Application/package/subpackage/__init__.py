@@ -1,5 +1,9 @@
-#Turns "subpackage" into a package for main.py
+'''
+Turns "subpackage" into a package for main.py
 
-from .Sixth import Six
+___init___.py is not designed to be run as a script so cannot be run
+'''
 
-__all__ = ["Fifth","Six"]
+from .Sixth_script import Six_Func
+
+__all__ = ["Fifth_script","Six_Func"]
