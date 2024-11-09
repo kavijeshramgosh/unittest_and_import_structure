@@ -4,6 +4,14 @@ First.One()
 
 Two()
 
-#from Application.package import Four 
+from Application.package import *
 
-#Four()
+Third.Three()
+
+Four()
+
+from Application.package.subpackage import *
+
+Fifth.Five()
+
+Six()
