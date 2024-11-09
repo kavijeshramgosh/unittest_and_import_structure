@@ -23,7 +23,7 @@ class TestOneFunction(unittest.TestCase):
     def test_no_input(self):
         self.assertEqual(First_script.One_Func(), None)
 
-#In Application directory, run 'python -m unittest discover -s ../tests_folder -p "test*' in CLI
+#In Application directory, run 'python -m unittest discover -s ../tests_folder -p "test*"' in CLI
 
 from package import *
 
