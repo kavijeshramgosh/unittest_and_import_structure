@@ -22,5 +22,7 @@ Each script talks in detail for how to get the unit tests to run so hopefully th
 
 
 TLDR: 
+
 If you're interested in \_\_init\_\_.py read each \_\_init\_\_.py and scripts
+
 If you're interested in getting unit testing set up read the unit test scripts
