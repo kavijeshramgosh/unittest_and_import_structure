@@ -12,8 +12,8 @@ There are two scripts which show importing using \_\_init\_\_.py which can be ru
 
 __These are the only 2 runnable scripts in this repo!__
 
-I have also experimented with how to run unit tests on these functions using the tests
-stored within "tests/" using imports
+I have also experimented with how to run unit tests on these (1-6) functions using the tests
+stored within "tests/"
 
 Within "tests/" there are two scripts, one if you dont have pyproject.toml set up and
 another with pyproject.toml set up
@@ -29,3 +29,5 @@ TLDR:
 If you're interested in \_\_init\_\_.py read each \_\_init\_\_.py and scripts
 
 If you're interested in getting unit testing set up read the unit test scripts
+
+Note: if you are unfamiliar with pyproject.toml or conda, you can go through conda instructions
