@@ -31,8 +31,8 @@ General structure of repo:
 
 TLDR: 
 
-If you're interested in \_\_init\_\_.py read each \_\_init\_\_.py and scripts
+If you're interested in \_\_init\_\_.py, read each \_\_init\_\_.py and scripts
 
-If you're interested in getting unit testing set up read the unit test scripts
+If you're interested in getting unit testing set up, read the unit test scripts
 
-Note: if you are unfamiliar with pyproject.toml or conda, you can go through conda instructions
+Note: If you are unfamiliar with pyproject.toml or conda, you can go through conda instructions
