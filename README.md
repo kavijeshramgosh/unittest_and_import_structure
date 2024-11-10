@@ -20,6 +20,33 @@ another with pyproject.toml set up
 
 Each script talks in detail for how to get the unit tests to run so hopefully this is helpful
 
+General structure of repo:
+
+.
+├── Application
+│   ├── First_script.py
+│   ├── \_\_init\_\_.py
+│   ├── main.py
+│   ├── package
+│   │   ├── Fourth_script.py
+│   │   ├── \_\_init\_\_.py
+│   │   ├── subpackage
+│   │   │   ├── Fifth_script.py
+│   │   │   ├── \_\_init\_\_.py
+│   │   │   └── Sixth_script.py
+│   │   └── Third_script.py
+│   └── Second_script.py
+│  
+├── tests
+│    ├── testing_with_no_pyprojecttoml.py
+│    └── testing_with_pyprojecttoml.py
+│  
+├── conda_instructions.txt
+├── environment.yml
+├── function_import.py
+├── pyproject.toml
+└── README.md
+
 
 TLDR: 
 
