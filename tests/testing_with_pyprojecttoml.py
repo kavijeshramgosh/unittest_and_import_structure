@@ -1,7 +1,7 @@
 '''
 Unit test scripts are not run like normal scripts. Instead they are "discovered" using the command:
 
-python -m unnittest discover -s path/to/testing_scripts/from/working_directory -p "*.py"
+python -m unittest discover -s path/to/testing_scripts/from/working_directory -p "*.py"
 
 the * wildcard at the end can run multiple testing scripts simultaneously
 
