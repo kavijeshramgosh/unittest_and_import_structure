@@ -8,7 +8,7 @@ There are two scripts which show importing using \_\_init\_\_.py which can be ru
 
 1 - A script called main.py within the "Application\/" directory
     
-2 -A script called function_imports.py outside of the "Application\/" directory
+2 -A script called function_import.py outside of the "Application\/" directory
 
 __These are the only 2 runnable scripts in this repo!__
 
