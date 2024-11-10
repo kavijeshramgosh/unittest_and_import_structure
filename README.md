@@ -22,9 +22,7 @@ Each script talks in detail for how to get the unit tests to run so hopefully th
 
 General structure of repo:
 
-![image](https://github.com/user-attachments/assets/de5e4e20-8d83-4073-b36e-8680ceaf90b8)
-
-
+![image](https://github.com/user-attachments/assets/96e5865b-1aea-4c16-add9-98916e58fca3)
 
 TLDR: 
 
