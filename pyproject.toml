@@ -1,0 +1,14 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "import_and_testing_guide"
+version = "1.0.0"
+description = "contains functions for testing at different directory depths"
+authors = ["Kavi Jeshram <kavi.jeshram@postgrad.manchester.ac.uk>"]
+license = "MIT"
+
+packages = [
+    { include = "Application" }
+]
