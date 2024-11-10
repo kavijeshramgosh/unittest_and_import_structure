@@ -1,12 +1,11 @@
-#Importing First_script and Two_func() using relative imports. __init__.py is not utilised
+# Importing First_script and Two_func() using relative imports. __init__.py 
+# is not utilised to import these two
 
 import First_script #Importing whole of "First.py"
 from Second_script import * #Importing all functions from "second.py"
 
 First_script.One_Func() #Can call any function in First through First.
 Two_Func() #Calling Two directly from Second (I think this lacks clarity of where it has come from)
-
-
 
 
 #Importing from a script in a different directory (using __init__.py)

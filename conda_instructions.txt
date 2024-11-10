@@ -1,11 +1,23 @@
 To create environment
 conda env create -f environment.yml
 
-To activate environment
-conda activate unittesting
-
-To check environment has been activated
+To check environment has been made
 conda env list 
 
-To check packages
+To activate environment
+(unittesting is the environment name in this repo)
+conda activate unittesting
+
+To check packages installed in env
 conda list
+
+To leave conda environment
+(unittesting is the environment name in this repo)
+conda deactivate unittesting
+
+To install pyproject.yml as editable
+(while in pyproject.yml directory)
+pip install -e . 
+
+To check package has installed I use 
+pip list | grep <package_name>

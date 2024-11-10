@@ -1,11 +1,24 @@
 '''
-Turns "package" into a package for main.py
+Turns "package/" into a package for function_import.py AND main.py
 
-___init___.py is not designed to be run as a script so cannot be run on its own
+Any scripts in package/ can be imported using:
+from Application.package import *
+
+This will import everything within __all__ stored in this init file
+
+note: ___init___.py is not designed to be run as a script so cannot be
+run on its own and -will- throw up an error if run but thats ok
+which is what confused me for a while
+
 '''
 
-from .Fourth_script import Four_Func #This lets us call the function directly instead of adding Fourth.Four
+# This lets us call the function directly instead of adding Fourth_script.Four_Func()
+# Also means other functions are not imported which may be useful in some cases
+from .Fourth_script import Four_Func 
 
-__all__ = ["Third_script","Four_Func"]#Third in the table lets us call Third.Three directly
+__all__ = ["Third_script","Four_Func"]
 
-#Only these 2 are needed in __all__ as these are the only scripts in this directory
+# Only these 2 are needed since these are the only scripts in this directory
+
+# Additionally Third_script does not need to be imported separately in here 
+# as __all__ makes it visbile within Application/packages for importing

@@ -19,7 +19,7 @@ adjacent to the package. As in
 
 so we need to set up our scripts into importable packages using __init__.py. Once each directory in
 our package has an __init__.py (set up correctly) we can now start unit testing. 
-(See structure of "Application" within this repo where each folder has a __init__.py)
+(See structure of "Application/" within this repo where each folder has a __init__.py)
 
 We can then change directory to the root of our package (here we would cd into /Application) and run 
 our discover command:
@@ -33,15 +33,15 @@ are in
 I will put some example tests underneath
 
 '''
-
+# We can import First_script straight away as we will be in "Application/"" on command line
 import unittest
-import First_script # We can import First_script straight away as we are in /Application on command line
+import First_script
 
 '''
 These tests below aren't actually useful tests, these are more of a proof of concept to show how to get 
 the tests to run in the first place
 
-Switch to the /Application directory, run: python -m unittest discover -s ../tests -p "testing_with_no_pyprojecttoml.py" 
+Switch to the "Application/" directory, run: python -m unittest discover -s ../tests -p "testing_with_no_pyprojecttoml.py" 
 in the command line. This command above runs all tests in this script. 
 
 '''
@@ -52,15 +52,11 @@ class TestOneFunction(unittest.TestCase):
         self.assertEqual(First_script.One_Func(), None)
 
 
-
-# The import is different for this particular function as the location is different to One_Func
-
 from package import *
 
 class TestThreeFunction(unittest.TestCase):
     def test_no_input(self):
         self.assertEqual(Third_script.Three_Func(), None)
-
 
 
 from package.subpackage import *
@@ -71,6 +67,9 @@ class TestFiveFunction(unittest.TestCase):
 
 '''
 You should have now seen 3 passed tests if the command was run properly
-please message me if it fails and you think something is broken
+
+note: the only difference between not having pyproject.toml set up is having to
+potentially import less things on line 38 as pyproject.toml will let you import 
+everything in that directory at once ( at least I think so? )
 
 '''

@@ -21,7 +21,7 @@ Instead you can import your scripts directly from an installed package (using a 
 The benefit of this is you do not need to be in any specific directory to run the discover
 command as long as the path to the tests is correct
 
-python -m unnittest discover -s path/to/tests/from/work_dir -p "*.py" can run multiple scripts
+python -m unittest discover -s path/to/tests/from/work_dir -p "*.py" can run multiple scripts
 
 E.g., python -m unittest discover -s ../tests/ -p "main.py"
 
@@ -30,7 +30,7 @@ This will search for and run test scripts
 I will put some example tests underneath
 '''
 
-#run: python -m unittest discover -s <insert correct path to tests here> -p "test_functions_with_install.py"
+#run: python -m unittest discover -s <insert correct path to tests here> -p "testing_with_pyprojecttoml.py"
 
 import unittest
 from Application import * #Imports the root application directory from installed package
@@ -47,9 +47,18 @@ class TestThreeFunction(unittest.TestCase):
         self.assertEqual(Third_script.Three_Func(), None)
 
 
-
 from Application.package.subpackage import *
 
 class TestFiveFunction(unittest.TestCase):
     def test_no_input(self):
         self.assertEqual(Fifth_script.Five_Func(), None)
+
+'''
+You should have now seen 3 passed tests if the command was run properly
+
+note: the only thing that has changed between this script and the one without pyproject.toml is less imports 
+due to line 36 importing everything from __init__.py within "Application/"
+if there are many scripts within the first directory and no pyproject.toml exists, each script will need to
+be imported manually ( I think so at least...)
+
+'''
