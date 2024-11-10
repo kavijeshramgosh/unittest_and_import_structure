@@ -1,5 +1,5 @@
 # Importing First_script and Two_func() using relative imports 
-# __init__.py is *not* utilised to import these two
+# __init__.py is *not* being utilised to import these two for main.py
 
 import First_script #Importing whole of "First.py"
 from Second_script import * #Importing all functions from "second.py"
