@@ -17,5 +17,5 @@ another with pyproject.toml set up
 Each script talks in detail for how to get the unit tests to run so hopefully this is helpful
 
 
-TLDR: if you're interested in __init__.py read each __init__.py and scripts
+TLDR: if you're interested in __init__.py read each __init__.py and scripts.
       if you're interested in getting unit testing set up read the unit test scripts
