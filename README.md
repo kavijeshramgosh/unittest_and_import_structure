@@ -6,9 +6,9 @@ There are a few scripts with functions named no.1-6 at different depths in the
 
 There are two scripts which show importing using \_\_init\_\_.py which can be run:
 
-1 - Within a script called main.py within the "Application" directory
+1 - Within a script called main.py within the "Application/" directory
     
-2 - Within function_imports.py outside of the "Application" directory
+2 - Within function_imports.py outside of the "Application/" directory
 
 __These are the only 2 runnable scripts in this repo!__
 
