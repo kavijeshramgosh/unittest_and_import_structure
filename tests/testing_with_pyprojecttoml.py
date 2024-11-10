@@ -1,7 +1,7 @@
 '''
 Unit test scripts are not run like normal scripts. Instead they are "discovered" using the command:
 
-python -m unittest discover -s path/to/testing_scripts/from/working_directory -p "*.py"
+python -m unittest discover -v -s path/to/testing_scripts/from/working_directory -p "*.py"
 
 the * wildcard at the end can run multiple testing scripts simultaneously
 
@@ -21,18 +21,18 @@ Instead you can import your scripts directly from an installed package (using a 
 The benefit of this is you do not need to be in any specific directory to run the discover
 command as long as the path to the tests is correct
 
-python -m unittest discover -s path/to/tests/from/work_dir -p "*.py" can run multiple scripts
+python -m unittest discover -v -s path/to/tests/from/work_dir -p "*.py" can run multiple scripts
 
-E.g., python -m unittest discover -s ../tests/ -p "main.py"
+E.g., python -m unittest discover -v -s ../tests/ -p "main.py"
 
 This will search for and run test scripts 
 
 I will put some example tests underneath
 '''
 
-# run: python -m unittest discover -s <insert correct path to tests here> -p "testing_with_pyprojecttoml.py"
+# run: python -m unittest discover -v -s <insert correct path to tests here> -p "testing_with_pyprojecttoml.py"
 # if you are in the root directory of this repo the command is:
-# python -m unittest discover -s ./tests -p "testing_with_pyprojecttoml.py"
+# python -m unittest discover -v -s ./tests -p "testing_with_pyprojecttoml.py"
 
 import unittest
 from Application import First_script #Imports the root application directory from installed package

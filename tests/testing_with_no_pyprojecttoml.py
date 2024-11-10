@@ -1,7 +1,7 @@
 '''
 Unit test scripts are not run like normal scripts. Instead they are "discovered" using the command:
 
-python -m unittest discover -s path/to/testing_scripts/from/working_directory -p "*.py"
+python -m unittest discover -v -s path/to/testing_scripts/from/working_directory -p "*.py"
 
 the * wildcard at the end can run multiple testing scripts simultaneously
 
@@ -25,7 +25,7 @@ We can then change directory to the root of our package (here we would cd into /
 our discover command:
 
 (don't run this particular one, theres an exact example on line 34)
-E.g., python -m unittest discover -s ../tests/ -p "*.py"
+E.g., python -m unittest discover -v -s ../tests/ -p "*.py"
 
 This will search for and run test scripts from the testing directory and apply it to the directory you
 are in
@@ -41,12 +41,12 @@ import First_script
 These tests below aren't actually useful tests, these are more of a proof of concept to show how to get 
 the tests to run in the first place
 
-Switch to the "Application/" directory, run: python -m unittest discover -s ../tests -p "testing_with_no_pyprojecttoml.py" 
+Switch to the "Application/" directory, run: python -m unittest discover -v -s ../tests -p "testing_with_no_pyprojecttoml.py" 
 in the command line. This command above runs all tests in this script. 
 
 '''
-#Checks if One_Func within First_script.py returns None (which it obviously does as it doesnt return anything)
 
+#Checks if One_Func within First_script.py returns 1
 class TestOneFunction(unittest.TestCase):
     def test_one_func_returns_none(self):
         self.assertEqual(First_script.One_Func(), 1)
