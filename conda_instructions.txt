@@ -21,3 +21,6 @@ pip install -e .
 
 To check package has installed I use 
 pip list | grep <package_name>
+
+To remove environment
+conda env remove --name unittesting
