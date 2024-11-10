@@ -11,5 +11,10 @@ a function in this location elsewhere
 '''
 
 def One_Func():
-    print("1")
+    return 1
 
+
+
+#ignore this, this is for testing imported functions into main
+def main_test_Func():
+    return 7

@@ -11,4 +11,4 @@ a function in this location elsewhere
 '''
 
 def Six_Func():
-    print("6")
+    return 6

@@ -15,7 +15,7 @@ which is what confused me for a while
 # Also means other functions are not imported which may be useful in some cases
 from .Second_script import Two_Func
 
-__all__ = [ "First_script" , "Two_Func" ]
+__all__ = [ "First_script" , "Two_Func" , "main_script" ]
 
 # Only these 2 are needed since these are the only scripts in this directory
 

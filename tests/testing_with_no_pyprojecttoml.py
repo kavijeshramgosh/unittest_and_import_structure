@@ -1,7 +1,7 @@
 '''
 Unit test scripts are not run like normal scripts. Instead they are "discovered" using the command:
 
-python -m unnittest discover -s path/to/testing_scripts/from/working_directory -p "*.py"
+python -m unittest discover -s path/to/testing_scripts/from/working_directory -p "*.py"
 
 the * wildcard at the end can run multiple testing scripts simultaneously
 
@@ -48,22 +48,22 @@ in the command line. This command above runs all tests in this script.
 #Checks if One_Func within First_script.py returns None (which it obviously does as it doesnt return anything)
 
 class TestOneFunction(unittest.TestCase):
-    def test_no_input(self):
-        self.assertEqual(First_script.One_Func(), None)
+    def test_one_func_returns_none(self):
+        self.assertEqual(First_script.One_Func(), 1)
 
 
 from package import *
 
 class TestThreeFunction(unittest.TestCase):
-    def test_no_input(self):
-        self.assertEqual(Third_script.Three_Func(), None)
+    def test_three_func_returns_none(self):
+        self.assertEqual(Third_script.Three_Func(), 3)
 
 
 from package.subpackage import *
 
 class TestFiveFunction(unittest.TestCase):
-    def test_no_input(self):
-        self.assertEqual(Fifth_script.Five_Func(), None)
+    def test_five_input(self):
+        self.assertEqual(Fifth_script.Five_Func(), 5)
 
 '''
 You should have now seen 3 passed tests if the command was run properly

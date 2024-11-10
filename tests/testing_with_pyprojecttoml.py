@@ -1,7 +1,7 @@
 '''
 Unit test scripts are not run like normal scripts. Instead they are "discovered" using the command:
 
-python -m unnittest discover -s path/to/testing_scripts/from/working_directory -p "*.py"
+python -m unittest discover -s path/to/testing_scripts/from/working_directory -p "*.py"
 
 the * wildcard at the end can run multiple testing scripts simultaneously
 
@@ -30,28 +30,30 @@ This will search for and run test scripts
 I will put some example tests underneath
 '''
 
-#run: python -m unittest discover -s <insert correct path to tests here> -p "testing_with_pyprojecttoml.py"
+# run: python -m unittest discover -s <insert correct path to tests here> -p "testing_with_pyprojecttoml.py"
+# if you are in the root directory of this repo the command is:
+# python -m unittest discover -s ./tests -p "testing_with_pyprojecttoml.py"
 
 import unittest
-from Application import * #Imports the root application directory from installed package
+from Application import First_script #Imports the root application directory from installed package
 
 class TestOneFunction(unittest.TestCase):
     def test_no_input(self):
-        self.assertEqual(First_script.One_Func(), None)
+        self.assertEqual(First_script.One_Func(), 1)
 
 
-from Application.package import *
+from Application.package import Third_script
 
 class TestThreeFunction(unittest.TestCase):
     def test_no_input(self):
-        self.assertEqual(Third_script.Three_Func(), None)
+        self.assertEqual(Third_script.Three_Func(), 3)
 
 
-from Application.package.subpackage import *
+from Application.package.subpackage import Fifth_script
 
 class TestFiveFunction(unittest.TestCase):
     def test_no_input(self):
-        self.assertEqual(Fifth_script.Five_Func(), None)
+        self.assertEqual(Fifth_script.Five_Func(), 5)
 
 '''
 You should have now seen 3 passed tests if the command was run properly

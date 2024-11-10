@@ -11,4 +11,4 @@ a function in this location elsewhere
 '''
 
 def Two_Func():
-    print("2")
+    return 2

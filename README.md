@@ -6,7 +6,7 @@ There are a few python files with functions named no.1-6 at different depths in 
 
 There are two scripts which show importing using \_\_init\_\_.py which can be run:
 
-1 - A script called main.py within the "Application\/" directory
+1 - A script called print_functions.py within the "Application\/" directory
     
 2 -A script called function_import.py outside of the "Application\/" directory
 
