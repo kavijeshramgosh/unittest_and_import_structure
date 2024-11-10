@@ -1,5 +1,5 @@
 This is a repo showcasing different types of imports using \_\_init\_\_.py and getting
-unit testing to work using these imports / pyproject.toml
+unit testing to work using these imports or pyproject.toml
 
 There are a few scripts with functions named no.1-6 at different depths in the 
 "Application\/" directory to show \_\_init\_\_.py setups
